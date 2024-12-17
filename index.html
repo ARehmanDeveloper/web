@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<style>
+    .navbar{
+      width: 99vw;
+    }
+    .container-fluid{
+      width: 99vw;  
+      background-color: rgb(1, 1, 55);
+        padding: 30px;
+        position: fixed;
+        top: 0vh;
+        z-index: 9;
+    }
+    .nav-link{
+        color: white;
+        position: relative;
+        left: 400px;
+        padding-left: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    :hover .nav-link{
+        color: white;
+    }
+    .fa-brands{
+      position: relative;
+      top: 6vh;
+      left: 90vw;
+      color: white;
+    }
+    h2{
+        color: white;
+        position: relative;
+        left: 40px;
+    }
+    .h12{
+        color: rgb(255, 68, 0);
+        font-weight: 700;
+    }  
+    .diva{
+      
+      width: 98.7vw;
+      height: 88vh;
+      position: absolute;
+      top: 11vh;
+      box-sizing: border-box;
+      background-image:url(img/img1.JPG);
+      background-size: 100% 100%;
+    }
+    .divb{
+      height: 45vh;
+      width: 28vw;
+      position: absolute;
+      top: 105vh;
+      left: 3vw;
+    }
+   h1{
+    color:rgb(1, 1, 55) ;
+    position: relative;
+    left: 3vw;
+    top: 7vh;
+   }
+   button{
+    
+    height: 5vh;
+    width: 12vw;
+    border: 2px solid rgb(89, 0, 89);
+    position: relative;
+    top: 10vh;
+    left: 5.5vw;
+    color: rgb(89, 0, 89);
+   }
+   button:hover{
+    background-color: rgb(89, 0, 89);
+    color: white;
+   }
+   .divc{
+    height: 45vh;
+    width: 68vw;
+    position: absolute;
+    top: 105vh;
+    left: 30vw;
+   }
+   .card1{
+    position: relative;
+    top: 3vh;
+    left: 3vw;
+   }
+   .card2{
+    position: relative;
+    top: 106.5vh;
+    left: 66vw;
+   }
+   .card3{
+    position: relative;
+    top: 112vh;
+    left: 33vw;
+   }
+   .card4{
+    position: relative;
+    top: 100.5vh;
+    left: 66vw;
+   }
+   .divd{
+    height: 70vh;
+    width: 45vw;
+    position: absolute;
+    top: 150vh;
+    background-image: url(img/img45.JPG);
+    background-size: 100% 100%;
+   }
+   .h1a{
+    position: relative;
+    top: 116vh;
+    left: 55vw;
+    font-size: 40px;
+   }
+   .pa1{
+    position: relative;
+    top: 118vh;
+    left: 55vw;
+   }
+    .cir{
+      height: 7vh;
+      width: 5vw;
+      border: 0.5px solid black;
+      border-radius: 50%;
+      position: relative;
+      top: 125vh;
+      left: 55vw;
+      background-image: url(img/img3.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    h4{
+      position: relative;
+      top: 118vh;
+      left: 62vw;
+      color: black;
+      font-weight: 400;
+    }
+    .pa2{
+      position: relative;
+      top: 117vh;
+      left: 62vw;
+      color: rgb(72, 72, 72);
+    }
+   
+    .dots-indicator {
+            position: absolute;
+            right: 5vw;
+            top: 170vh;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+
+        .dot.active {
+            background-color: #6a5acd;
+            height: 15px;
+            width: 15px;
+        }
+        .de1{
+          position: absolute;
+          top: 230vh;
+          left: 20vw;
+          font-family: sans-serif;
+          font-weight: 600;
+          font-size: 40px;
+        }
+        h5{
+          position: absolute;
+          top: 235vh;
+          left: 40vw;
+          color: rgb(89, 0, 89);
+        }
+        .div1{
+          height: 50vh;
+          width: 30vw;
+          border: 1px solid black;
+          position: absolute;
+          top: 245vh;
+        }
+        .div2{
+          height: 60vh;
+          width: 30vw;
+          border: 1px solid black;
+          position: absolute;
+          top: 240vh;
+          left: 34.5vw;
+          background-color: rgb(89, 0, 89);
+        }
+        .div3{
+          height: 50vh;
+          width: 30vw;
+          border: 1px solid black;
+          position: absolute;
+          top: 245vh;
+          left: 68.5vw;
+        }
+        .h2a1{
+          position: relative;
+          top: 8vh;
+          left: 6vw;
+          color: black;
+        }
+        .pf1{
+          position: relative;
+          top: 10vh;
+          left: 6vw;
+          color: #262626;
+        }
+        img{
+          position: relative;
+          top: 5vh;
+          left: 6vh;
+          height: 15vh;
+          width: 15vh;
+        }
+        .h2a2{
+          position: relative;
+          top: 2vh;
+          left: 5vw;
+          color: rgb(255, 255, 255);
+        }
+        .pf2{
+          position: relative;
+          top: 4vh;
+          left: 4vw;
+          color: #ffffff;
+        }
+        .im1{
+          position: relative;
+          top: 5vh;
+          left: 6vh;
+          height: 20vh;
+          width: 18vw;
+          
+        }
+        .h2a3{
+          position: relative;
+          top: 4vh;
+          left: 6vw;
+          color: black;
+        }
+        .pf3{
+          position: relative;
+          top: 6vh;
+          left: 6vw;
+          color: #262626;
+        }
+        .im2{
+          position: relative;
+          top: 5vh;
+          left: 6vh;
+          height:15vh;
+          width: 10vw;
+        }
+        .but1{
+          height: 7vh;
+          width: 12vw;
+          border:1px solid white;
+          color:white;
+          position: relative;
+          top: 10vh;
+          left: 8vw;
+          background-color: rgb(89, 0, 89);
+        }
+        .but1:hover{
+          background-color: white;
+          color: rgb(89, 0, 89);
+        }
+        .divf{
+          height: 95vh;
+          width: 98.5vw;
+          position: absolute;
+          top: 310vh;
+          background-color: whitesmoke;
+        }
+        .card5{
+          height: 12vh;
+          width: 25vw;
+          border: 1px solid white;
+          position: relative;
+          top: 33vh;
+          left: 7vw;
+        }
+        .he1{
+          color: black;
+          position: relative;
+          left: 10vw;
+        }
+        .pl1{
+          color: #262626;
+        }
+        .card6{
+          height: 12vh;
+          width: 25vw;
+          border: 1px solid white;
+          position: relative;
+          top: -11vh;
+          left: 52vw;
+        }
+        .he2{
+          color: black;
+          position: relative;
+          left: 10vw;
+        }
+        .pl2{
+          color: #262626;
+        }
+        .card7{
+          height: 12vh;
+          width: 25vw;
+          border: 1px solid white;
+          position: relative;
+          top: 0vh;
+          left: 1vw;
+        }
+        .he3{
+          color: black;
+          position: relative;
+          left: 10vw;
+        }
+        .pl3{
+          color: #262626;
+        }
+        .card8{
+          height: 12vh;
+          width: 25vw;
+          border: 1px solid white;
+          position: relative;
+          top: -13vh;
+          left: 52vw;
+        }
+        .he4{
+          color: black;
+          position: relative;
+          left: 10vw;
+        }
+        .pl4{
+          color: #262626;
+        }
+        .divg{
+          height: 50vh;
+          width: 25vw;
+          position: relative;
+          top: -57vh;
+          left: 26vw;
+          background-image: url(img/rang.JPG);
+          background-size: 100% 100%;
+          background-color: aliceblue;
+        }
+        .dx{
+          position: relative;
+          top: -60vh;
+          left: 26.5vw;
+          color: black;
+        }
+        .but2{
+          height: 7vh;
+          width: 15vw;
+          position: relative;
+          top:-55vh;
+          left: 31vw;
+        }
+        .divh{
+          height: 47vh;
+          width: 98.5vw;
+          
+          position: absolute;
+          top: 97vh;
+          background-image:url(img/gala.JPG) ;
+          background-size: 100% 100%;
+        }
+        .divi{
+          height: 60vh;
+          width: 40vw;
+          position:absolute;
+          top: 150vh;
+          background-image: url(img/tn.JPG);
+          background-size: 100% 100%;
+        }
+        .divj{
+          height: 60vh;
+          width: 40vw;
+          position: absolute;
+          top: 150vh;
+          left: 50vw;
+          
+        }
+        .zx{
+          color: black;
+          position: relative;
+          top: 14vh;
+          left: 6vw;
+          font-size: 45px;
+
+        }
+        .kl{
+          position: relative;
+          top: 16vh;
+          left: 6vw;
+        }
+        .but4{
+          height: 7vh;
+          width: 15vw;
+          position: relative;
+          top: 23vh;
+          left: 15vw;
+        }
+        .divk{
+          height: 40vh;
+          width: 98.5vw;
+          background-color: rgb(34, 0, 34);
+          position: absolute;
+          top: 220vh;
+        }
+        .bn{
+          color: white;
+          font-size: 50px;
+          font-family: sans-serif;
+          position: relative;
+          top: 10vh;
+          left: 24vw;
+        }
+        .fg{
+          color: white;
+          position: relative;
+          top: 12vh;
+          left: 33.5vw;
+        }
+        input{
+          height: 6vh;
+          width: 70vw;
+          background-color: rgb(89, 0, 89);
+          position: relative;
+          top: 15vh;
+          left: 4vw;
+        }
+        .but7{
+          height: 6vh;
+          width: 15vw;
+          position: relative;
+          top: 15vh;
+          left: 5vw;
+          background-color: rgb(0, 0, 0);
+          color: white;
+          border: 1px solid white;
+        }
+        footer{
+          position: absolute;
+          top: 260vh;
+        }
+</style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <h2>Ran</h2> <h2 class="h12">GO</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
+             </div>
+             <i class="fa-brands fa-searchengin"></i>
+            </div>
+        </div>
+      </nav>
+      <div class="diva"></div>
+      <div class="divb">
+        <h1> Build your <br>
+             entire <br>
+             websites in <br>
+             minutes <br>
+        </h1>
+        <button>Discover More</button>
+      </div>
+      <div class="divc">
+        
+        <div class="card1" style="width: 25rem;" >
+          <div class="card-body">
+            <h3 class="card-title">Great team</h3>
+            <p class="card-text">Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
+            </div>
+            </div>
+          </div>
+          <div class="card2" style="width: 25rem;" >
+            <div class="card-body">
+              <h3 class="card-title">Online Marketing</h3>
+              <p class="card-text">Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
+              </div>
+              </div>
+            </div>
+            <div class="card3" style="width: 25rem;" >
+              <div class="card-body">
+                <h3 class="card-title">Modern Design</h3>
+                <p class="card-text">Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
+                </div>
+                </div>
+              </div>
+              <div class="card4" style="width: 25rem;" >
+                <div class="card-body">
+                  <h3 class="card-title">Easy to use</h3>
+                  <p class="card-text">Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            <div class="divd"></div>
+            <div class="dive">
+              <h1 class="h1a">
+                Fast support <br>
+                to all  our <br>
+                clients. Just give <br>
+                us a shout
+              </h1>
+              <p class="pa1">Etiam euismod sapien nec est tempus<br>consequat.Nullam eget pretium mi. Curabitur rhoncusfinibus<br>quam quis sodales.</p>
+            <div class="cir"></div>
+            <h4>Michael Smith</h4>
+            <p class="pa2">Manager</p>
+            </div>
+              <div class="dots-indicator">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot active"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+              </div>
+          </div>
+          <h1 class="de1">RanGO. We take care of your bussines</h1>
+          <h5>Explore our services</h5>
+          <div class="div1">
+            <img src="img/ass.JPG" alt="">
+            <h2 class="h2a1">Assesment</h2>
+            <p class="pf1">Etiam euismod sapien nec est <br> tempus consequat.Nullam eget pretium <br> Curabitur rhoncusfinibus quam quis <br> sodales.</p>
+          </div>
+          <div class="div2">
+            <img src="img/add.JPG" alt="" class="im1">
+            <h2 class="h2a2">Great team</h2>
+            <p class="pf2">Etiam euismod sapien nec est <br> tempus consequat.Nullam eget pretium <br> Curabitur rhoncusfinibus quam quis <br> sodales.</p>
+          <button class="but1">Discover More</button>
+          </div>
+          <div class="div3">
+            <img src="img/Camm.JPG" alt="" class="im2">
+            <h2 class="h2a3">Amazing services</h2>
+            <p class="pf3">Etiam euismod sapien nec est <br> tempus consequat.Nullam eget pretium <br> Curabitur rhoncusfinibus quam quis <br> sodales.</p>
+          </div>
+          <div class="divf">
+            <div class="card5">
+              <h2 class="he1">Responsive</h2>
+              <p class="pl1">
+                Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus.
+              </p>
+              <div class="card6">
+                <h2 class="he2">Retina ready</h2>
+                <p class="pl2">
+                  Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus.
+                </p>
+              </div>
+                <div class="card7">
+                  <h2 class="he3">Clean code</h2>
+                  <p class="pl3">
+                    Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus.
+                  </p>
+            </div>
+            <div class="card8">
+              <h2 class="he4">Great team</h2>
+              <p class="pl4">
+                Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus.
+              </p>
+            </div>
+            <h1 class="dx">Modern features</h1>
+            <div class="divg"></div>
+          <button class="but2">Discover More</button>
+          </div>
+          <div class="divh"></div>
+          <div class="divi"></div>
+          <div class="divj">
+            <h2 class="zx">We integrate the <br>future</h2>
+            <p class="kl">Etiam nec odio vestibulum est mattis effic iturut magna. <br>Pelle ntesque sit am et tellus blandit. Etiam nec odio <br>vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
+          <button class="but4">Discover More</button>
+          </div>
+          <div class="divk">
+            <h1 class="bn">Subscribe to our newsletter</h1>
+            <p class="fg">Cursus, enim a ultrices venenatis, ante magna varius.</p>
+            <input type="text" placeholder="   your email adress here"> <button class="but7">Subscribe</button>
+          </div>
+          <footer style="background: #f9f9f9; padding: 40px 0;">
+            <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <!-- Logo and Description -->
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <h2 style="font-family: Arial, sans-serif; color: #333;">Ran<span style="color: orange;">GO</span></h2>
+                    <p style="color: #666; font-size: 14px; line-height: 1.8;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.
+                    </p>
+                    <div style="margin-top: 15px;">
+                        <a href="#" style="margin-right: 10px; color: #666; text-decoration: none;"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" style="margin-right: 10px; color: #666; text-decoration: none;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" style="margin-right: 10px; color: #666; text-decoration: none;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" style="margin-right: 10px; color: #666; text-decoration: none;"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#" style="margin-right: 10px; color: #666; text-decoration: none;"><i class="fa-brands fa-behance"></i></a>
+                        <a href="#" style="margin-right: 10px; color: #666; text-decoration: none;"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Footer Links -->
+                <div style="flex: 1; min-width: 150px; padding: 10px;">
+                    <h3 style="font-size: 16px; color: #333;">Services</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: #666;">
+                        <li>Social media</li>
+                        <li>Management</li>
+                        <li>Branding</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 150px; padding: 10px;">
+                    <h3 style="font-size: 16px; color: #333;">Menu</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: #666;">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Services</li>
+                        <li>Portfolio</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 150px; padding: 10px;">
+                    <h3 style="font-size: 16px; color: #333;">About us</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: #666;">
+                        <li>The team</li>
+                        <li>History</li>
+                        <li>Company</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 150px; padding: 10px;">
+                    <h3 style="font-size: 16px; color: #333;">Community</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: #666;">
+                        <li>Blog</li>
+                        <li>Forums</li>
+                        <li>Q&A</li>
+                        <li>Purposes</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px; color: #999; font-size: 14px;">
+                Copyright ©2024 All rights reserved | This template is made with <span style="color: red;">❤</span> by 
+                <a href="https://colorlib.com" style="color: #333; text-decoration: none;">Colorlib</a>
+            </div>
+        </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
